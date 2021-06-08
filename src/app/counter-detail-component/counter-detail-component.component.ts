@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Counter } from '../counter';
 
 @Component({
@@ -8,7 +8,7 @@ import { Counter } from '../counter';
 })
 export class CounterDetailComponentComponent implements OnInit {
 
-  counters: Counter;
+  @Input() counters: Counter;
   constructor() {  
   }
 
