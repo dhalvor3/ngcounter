@@ -1,0 +1,6 @@
+<div class="py-5">
+    
+    <h4>{{ supercounter.value }}</h4>
+    <button class='btn btn-primary btn-lg increment' (click) = "Increment()" > + </button>
+    <button class='btn btn-primary btn-lg decrement' (click) = "Decrement()" [disabled] = "supercounter.value == 0" > - </button>
+</div>

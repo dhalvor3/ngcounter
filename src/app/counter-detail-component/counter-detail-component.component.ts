@@ -8,7 +8,7 @@ import { Counter } from '../counter';
 })
 export class CounterDetailComponentComponent implements OnInit {
 
-  @Input() counter: Counter = new Counter();
+  @Input() counter: Counter = new Counter;
   constructor() {  
   }
 
