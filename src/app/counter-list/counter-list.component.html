@@ -4,4 +4,4 @@
     <button class='btn btn-primary' (click) = "create()" > Create </button>
 </div>
 
-
+<counter *ngFor="let counter of counters" [counter]="counter"></counter>
