@@ -1,6 +1,7 @@
 <div class="py-5">
     
     <h4>{{ counter.value }}</h4>
-    <button class='btn btn-primary' (click) = "Increment()" > + </button>
-    <button class='btn btn-primary' (click) = "Decrement()" [disabled] = "counter.value == 0" > - </button>
+    <button class='btn btn-primary increment' (click) = "Increment()" > + </button>
+    <button class='btn btn-primary decrement' (click) = "Decrement()" [disabled] = "counter.value == 0" > - </button>
 </div>
+

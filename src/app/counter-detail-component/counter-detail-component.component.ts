@@ -8,8 +8,11 @@ import { Counter } from '../counter';
 })
 export class CounterDetailComponentComponent implements OnInit {
 
-  @Input() counter: Counter;
+  @Input() counter: Counter = new Counter();
   constructor() {  
+  }
+
+  ngOnInit() {
   }
 
   Increment() {
@@ -19,13 +22,6 @@ export class CounterDetailComponentComponent implements OnInit {
   Decrement() {
     if (this.counter.value > 0) {
       this.counter.value--;
-    } else {
-      console.log('error - value would be < 0');
-    }
+    } 
   }
-
-
-  ngOnInit(): void {
-  }
-
 }

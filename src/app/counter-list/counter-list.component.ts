@@ -15,13 +15,13 @@ export class CounterListComponent implements OnInit {
     this.counters=[];
    }
 
-   create() {
-//    this.counters.push(new Counter);
+   ngOnInit() {
+  }
+
+  create() {
       const counter = new Counter();
       this.counters.push(counter);
   }
 
-  ngOnInit(): void {
-  }
 
 }
