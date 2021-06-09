@@ -2,5 +2,5 @@
     
     <h4>{{ counter.value }}</h4>
     <button class='btn btn-primary' (click) = "Increment()" > + </button>
-    <button class='btn btn-primary' (click) = "Decrement()" > - </button>
+    <button class='btn btn-primary' (click) = "Decrement()" [disabled] = "counter.value == 0" > - </button>
 </div>
