@@ -8,17 +8,17 @@ import { Counter } from '../counter';
 })
 export class CounterDetailComponentComponent implements OnInit {
 
-  @Input() counters: Counter;
+  @Input() counter: Counter;
   constructor() {  
   }
 
   Increment() {
-    this.counters.value++;
+    this.counter.value++;
   }
 
   Decrement() {
-    if (this.counters.value > 0) {
-      this.counters.value--;
+    if (this.counter.value > 0) {
+      this.counter.value--;
     } else {
       console.log('error - value would be < 0');
     }
